@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>The Best Films</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The Best Films">
+  <meta name="keywords" content="Best, Films, Relaxation">
+  <meta name="author" content="Alisher Biibosunov">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="/CSS/mystyle.css">
+  <script src="/JS/myjs.js"></script>
+  <!-- Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+      <!--Header Logo-->
+  <img src="logo.jpg" alt="Icon" style="width:100px;height:100px;" class="logo">
+  <a id="head_text">Watch the best films</a>
+  <div class="right_side">
+
+    <button type="button" class="head_button" id="home">Home</button>
+    <button type="button" class="head_button" onclick="openContacts()">Contact Us</button>
+    <button type="button" class="head_button" onclick="openTable()">About</button>
+    <button type="button" class="head_button" onclick="openReservation()">Reservation</button>    
+    </div>
+  </div>
+
+<button type="button" class="button" onclick="openForm()"> Buy ticket now!</button>
+
+<div class="form-acc" id="myForm">
+<form class="form-container">
+  <h1 id="style">Buying</h1>
+
+   <label for="name"><b>Name, Surname:</b></label>
+    <input type="text" placeholder="Enter Name, Surname" id="name" required> <br>
+
+
+    <label for="phone"><b>Contact phone number:</b></label>
+    <input type="tel" placeholder="Enter your phone" id="phone" required> <br>
+
+
+    <button type="submit" class="button">Buy</button>
+    <button type="button" class="button cancel" onclick="closeForm()">Close</button>
+</form>
+</div>
+
+<div>
+  <p id="contacts" class="contacts">
+    <b>
+    Contact number: +996 705 675 675 <br>
+    Gmail: alisher.biibosunov@iaau.edu.kg<br>
+  </b>
+    <button type="button" class="cancel_button" onclick="closeContacts()">Close</button>
+  </p>
+
+</div>
+
+<div class="table-container" id="about">
+  <p>
+    Information about films:
+  </p>
+   <table class="table table-striped" id="white-color">
+     <thead>
+       <tr>
+        <th>Film name:</th>
+        <th>Duration of film:</th>
+        <th>Film genre</th>
+        <th>Price:</th>
+      </tr>
+      </thead>
+     <tbody id="tbody">
+      <tr>
+        <td>Scarface</td>
+        <td>170 minutes</td>
+        <td>Crime drama</td>
+        <td>5$</td>
+      </tr>
+
+      <tr>
+        <td>The Godfather</td>
+        <td>177 minutes</td>
+        <td>Crime</td>
+        <td>5$</td>
+      </tr>
+
+      <tr>
+        <td>Afonya</td>
+        <td>92 minutes</td>
+        <td>Soviet comedy</td>
+        <td>4$</td>
+      </tr>
+
+      <tr>
+        <td>Just go with it</td>
+        <td>117 minutes</td>
+        <td>Romantic comedy</td>
+        <td>5$</td>
+      </tr>
+
+      <tr>
+        <td>The silence of the Lambs</td>
+        <td>118 minutes</td>
+        <td>Psychological horror</td>
+        <td>5$</td>
+      </tr>
+
+      <tr>
+        <td>Spirited Away (anime)</td>
+        <td>125 minutes</td>
+        <td>Animated fantasy</td>
+        <td>5$</td>
+      </tr>
+      <button type="button" class="cancel_btn" onclick="closeTable()">Close</button>
+      </tbody> 
+   </table>
+</div>
+
+<div class="reservation" id="res">
+  <p>
+    Online pay: 123456789098765 <br>
+    <button type="button" class="cancel_btn" onclick="closeReservation()">Close</button>
+  </p>
+</div>
+
+<div class="images">
+<p class="content">
+<img src="Justgowithit.jpg" alt="first" style="width:200px;height:300px;">
+<img src="Godfather.jpg" alt="second" style="width:200px;height:300px;">
+<img src="Afonya.jpg" alt="third" style="width:200px;height:300px;">
+<img src="Spiritted.jpg" alt="fourth" style="width:200px;height:300px;">
+</p>
+</div>
+
+<!-- Footer-->
+  <footer class="footer">
+    <div class="gmail">
+  <h6>Author: Alisher Biibosunov</h6>
+  <h6><a href="mailto:alisher.biibosunov@iaau.edu.kg">Mail Us!</a></h6>
+</div>
+</footer>
+
+</body>
+</html>
