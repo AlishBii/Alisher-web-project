@@ -1,9 +1,9 @@
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
+  document.getElementById("myRegistration").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+  document.getElementById("myRegistration").style.display = "none";
 }
 
 function openContacts() {
@@ -21,4 +21,3 @@ function openTable() {
 function closeTable() {
   document.getElementById("about").style.display = "none";
 }
-
