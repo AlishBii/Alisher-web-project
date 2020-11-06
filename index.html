@@ -9,30 +9,25 @@
   <meta name="keywords" content="Best, Films, Relaxation">
   <meta name="author" content="Alisher Biibosunov">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS stylesheet-->
-  <link rel="stylesheet" href="/CSS/mystyle.css">
-  <script src="/JS/myjs.js"></script>
-  <!-- Bootstrap stylesheet-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
+<!-- CSS stylesheet-->
+  <link rel="stylesheet" href="style.css">
+  <script src="JS.js"></script>
+<!-- Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+
 </head>
 
 <body>
     <!--Header-->
     <div class="header">
       <!--Header Logo-->
-  <img src="logo.jpg" alt="Icon" style="width:100px;height:100px;" class="logo">
+  <img src="logo.jpg" alt="Icon" class="logo">
   <a id="head_text">Watch the best films</a>
   <div class="right_side">
 
-    <button type="button" class="head_button" id="home">Home</button>
     <button type="button" class="head_button" onclick="openContacts()">Contact Us</button>
     <button type="button" class="head_button" onclick="openTable()">About</button>
-    <button type="button" class="head_button" onclick="openReservation()">Reservation</button>    
     </div>
   </div>
 
@@ -79,7 +74,7 @@
         <th>Price:</th>
       </tr>
       </thead>
-     <tbody id="tbody">
+     <tbody id="text_body">
       <tr>
         <td>Scarface</td>
         <td>170 minutes</td>
@@ -121,24 +116,19 @@
         <td>Animated fantasy</td>
         <td>5$</td>
       </tr>
-      <button type="button" class="cancel_btn" onclick="closeTable()">Close</button>
+      <button type="button" class="cancel_button" onclick="closeTable()">Close</button>
       </tbody> 
    </table>
 </div>
 
-<div class="reservation" id="res">
-  <p>
-    Online pay: 123456789098765 <br>
-    <button type="button" class="cancel_btn" onclick="closeReservation()">Close</button>
-  </p>
-</div>
 
 <div class="images">
 <p class="content">
-<img src="Justgowithit.jpg" alt="first" style="width:200px;height:300px;">
-<img src="Godfather.jpg" alt="second" style="width:200px;height:300px;">
-<img src="Afonya.jpg" alt="third" style="width:200px;height:300px;">
-<img src="Spiritted.jpg" alt="fourth" style="width:200px;height:300px;">
+<img src="Justgowithit.jpg" alt="first picture" style="width:200px;height:300px;">
+<img src="Godfather.jpg" alt="second picture" style="width:200px;height:300px;">
+<img src="Afonya.jpg" alt="third picture" style="width:200px;height:300px;">
+<img src="Spiritted.jpg" alt="fourth picture" style="width:200px;height:300px;">
+<img src="Thesilence.jpg" alt="fifth picture" style="width:200px;height:300px;">
 </p>
 </div>
 
