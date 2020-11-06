@@ -27,13 +27,13 @@
   <div class="right_side">
 
     <button type="button" class="head_button" onclick="openContacts()">Contact Us</button>
-    <button type="button" class="head_button" onclick="openTable()">About</button>
+    <button type="button" class="head_button" onclick="openTable()">Information</button>
     </div>
   </div>
 
 <button type="button" class="button" onclick="openForm()"> Buy ticket now!</button>
 
-<div class="form-acc" id="myForm">
+<div class="registration" id="myRegistration">
 <form class="form-container">
   <h1 id="style">Buying</h1>
 
@@ -43,10 +43,9 @@
 
     <label for="phone"><b>Contact phone number:</b></label>
     <input type="tel" placeholder="Enter your phone" id="phone" required> <br>
+    <button type="submit" class="bttn">Buy</button>
+    <button type="button" class="button_cancel" onclick="closeForm()">Close</button>
 
-
-    <button type="submit" class="button">Buy</button>
-    <button type="button" class="button cancel" onclick="closeForm()">Close</button>
 </form>
 </div>
 
@@ -135,10 +134,11 @@
 <!-- Footer-->
   <footer class="footer">
     <div class="gmail">
-  <h6>Author: Alisher Biibosunov</h6>
+  <h6>Owner : Alisher Biibosunov</h6>
   <h6><a href="mailto:alisher.biibosunov@iaau.edu.kg">Mail Us!</a></h6>
 </div>
 </footer>
 
 </body>
 </html>
+
